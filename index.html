@@ -1,154 +1,120 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="en">
     <head>
-        <!--Codigo basico del head en html-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Landing Page.</title>
-        <!--CSS de FontAwesome para iconos-->
+        
         <link rel="stylesheet" href="css/all.css">
-        <!--CSS de la Landing Page-->
-        <link rel="stylesheet" href="styles.css" media="screen">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
     </head>
     
     <body>
-        <!--Checkbox que muestra barra lateral-->
-        <input type="checkbox" id="toggle">
-        <label for="toggle">
-            <span></span>
-            <span></span>
-        </label>
-
-        <!--Header-->
-        <header>
-            <div class="logo">
-                <img src="images/logo.png" alt="">
-                <h2>Company Name</h2>
-            </div>
-            <div class="navbar">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contacts</li>
-                    <li>Blogs</li>
-                    <li>Portfolio</li>
-                </ul>
-            </div>
-        </header>
-
-        <main>
-            <!--Banner principal-->
-            <section class="banner">
-                <div class="container">
-                    <div class="content">
-                        <div class="info">
-                            <h1>Welcome</h1>
-                            <p>Insert text</p>
-                            <button type="button" name="button">
-                                <a href="#">Call To Action</a>
-                            </button>
-                        </div>
-                        <div class="image">
-                            <img src="images/computer.svg" alt="">
-                        </div>
-                    </div>
-                </div>
         
-                <div class="icons">
-                    <a href="http://facebook.com">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="http://twitter.com">
-                        <i class="fab fa-twitter-square"></i>
-                    </a>
-                    <a href="http://instagram.com">
-                        <i class="fab fa-instagram-square"></i>
-                    </a>
-                    <a href="http://linkedin.com">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-            </section>
-            <!--Reinforcement y form-->
-            <section class="reinforcement">
-                <div class="container">
-                    <div class="content">
-                        <div class="info">
-                            <h1>Welcome</h1>
-                            <p>Insert text</p>
-                            <button type="button" name="button">
-                                <a href="#">Call To Action</a>
-                            </button>
-                        </div>
-                        <div class="image">
-                            <img src="images/computer.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!--
-        <footer class="section-footer py-4 bg-primary">
-            <div class="container">
-                <div>
-                    <h2 class="text-2 mb-1">Lorem ipsum dolor sit.</h2>
-                    <a href="http://twitter.com">
-                        <i class="fab fa-twitter fa-2x"></i>
-                    </a>
-                    <a href="http://facebook.com">
-                        <i class="fab fa-facebook fa-2x"></i>
-                    </a>
-                    <a href="http://youtube.com">
-                        <i class="fab fa-youtube fa-2x"></i>
-                    </a>
-                    </div>
-                    <div>
-                    <h3>Company Info</h3>
+        <section class="header">
+            <nav>
+                <!--Suponemos que el logo contiene el nombre de la empresa-->
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+                <div class="nav-links">
                     <ul>
-                        <li><a href="#">All Products</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contacts</a></li>
+                        <li><a href="">Blogs</a></li>
+                        <li><a href="">Portfolio</a></li>
                     </ul>
-                    </div>
-                    <div>
-                    <h3>Blog Posts</h3>
-                    <ul>
-                        <li><a href="#">Lorem ipsum dolor.</a></li>
-                        <li><a href="#">Lorem ipsum dolor.</a></li>
-                        <li><a href="#">Lorem ipsum dolor.</a></li>
-                        <li><a href="#">Lorem ipsum dolor.</a></li>
-                    </ul>
-                    </div>
-                    <div>
-                    <h3>Subscribe</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <form
-                        class="mt-1"
-                        name="email-form"
-                        method="POST"
-                        data-netlify="true"
-                    >
-                        <div class="email-form">
-                        <span class="form-control-wrap"
-                            ><input
-                            type="email"
-                            name="email"
-                            id="email"
-                            size="40"
-                            class="form-control"
-                            placeholder="E-mail"/></span
-                        ><button type="submit" value="Submit" class="form-control submit">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                        </div>
-                    </form>
+                </div>
+            </nav>
+
+            <div class="text-box">
+                <h1>Our Phrase</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut feugiat sapien, at pretium nibh.</p>
+                <a class="hero-btn" href="">Call-To-Action</a>
+            </div>
+        </section>
+ 
+        <section class="reinforcement">
+            <div class="row">
+                <div class="reinforcement-column">
+                    <h1>Reinforcement</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut feugiat sapien, at pretium nibh. Vivamus finibus sem eget orci imperdiet congue. Nulla velit lacus, venenatis a cursus in, pulvinar quis ex.</p>
+                </div>
+                <div class="reinforcement-column">
+                    <img src="" alt="">
                 </div>
             </div>
-        </footer>
-        -->
+        </section>
+        
+        <section class="features">
+            <h1>Features</h1>
+
+            <div class="row">
+                <div class="feature-column">Feature 1</div>
+                <div class="feature-column">Feature 2</div>
+                <div class="feature-column">Feature 3</div>
+            </div>
+        </section>
+        
+        <section class="testimonials">
+            <h1>What Our Client Says</h1>
+            <p>Insert text</p>
+
+            <div class="row">
+                <div class="testimonial-column">
+                    <img src="" alt="">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut feugiat sapien, at pretium nibh. Vivamus finibus sem eget orci imperdiet congue.</p>
+                        <h3>Client Name 1</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-column">
+                    <img src="" alt="">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut feugiat sapien, at pretium nibh. Vivamus finibus sem eget orci imperdiet congue. Nulla velit lacus, venenatis a cursus in, pulvinar quis ex.</p>
+                        <h3>Client Name 2</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="benefits">
+            <h1>Our Benefits</h1>
+
+            <div class="row">
+                <div class="benefit-column">Benefit 1</div>
+                <div class="benefit-column">Benefit 2</div>
+                <div class="benefit-column">Benefit 3</div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Ut ut feugiat sapien, at pretium nibh. 
+            Vivamus finibus sem eget orci imperdiet congue.</p>
+
+            <div class="icons">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="far fa-heart"></i> by Mixtemi</p>
+        </section>
+
     </body>
 </html>
