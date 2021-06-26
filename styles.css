@@ -10,7 +10,7 @@ body{
     height: 100vh;
     background: url(images/waves.svg) no-repeat;
     background-size: 100% 400px;
-    background-position: 0 200px;
+    background-position: 0 300px;
     overflow: hidden;
     font-family: arial;
 }
