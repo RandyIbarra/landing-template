@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+</head>
+<body>
+    <header>
+        <nav class="bg-c_01 h-28 pt-16 pr-32">
+            <ul class="flex justify-end space-x-4 text-lg text-c_04">
+                <li><a href="./index.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <div class="absolute top-0 left-64">
+            <img class="h-48" src="./images/logo.svg" alt="logo">
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="flex flex-col items-center mt-32">
+                <h2>Contáctanos</h2>
+                <form action="" class="bg-c_01 mt-8 py-12 px-24 space-y-8 rounded shadow">
+                    <label class="block" for="name">
+                        <span>Nombre</span>
+                        <input type="text" class="block bg-c_05 mt-2 p-2 text-xl w-full" placeholder="Juanito Perez Lopez" name="name" autocomplete="name" required>
+                    </label>
+                    <label class="block" for="">
+                        <span>Correo Electronico</span>
+                        <input type="email" class="block bg-c_05 mt-2 p-2 text-xl w-full" placeholder="hola@mixtemi.com" name="email" autocomplete="email" required>
+                    </label>
+                    <div>
+                        <span>Pregunta Si/No</span>
+                        <div class="flex justify-around mt-2">
+                            <label for="">
+                                <input type="radio" name="pr-1" value="si" required>
+                                <span class="text-gray-800">Si</span>
+                            </label>
+                            <label for="">
+                                <input type="radio" name="pr-1" value="no" required>
+                                <span class="text-gray-800">No</span>
+                            </label>
+                        </div>
+                    </div>
+                    <label class="block" for="pt-1">
+                        <span>Pregunta texto</span>
+                        <textarea class="block bg-c_05 mt-2 p-2 w-full text-xl" name="pt-1" rows="3" placeholder="Me parece muy bonito"></textarea>
+                    </label>
+                    <div>
+                        <span>Pregunta fecha</span>
+                        <div class="mt-2">
+                            <label class="" for="date">
+                                <span class="text-lg text-c_04">Día:</span>
+                                <input class="bg-c_05 ml-2 p-2" type="date" name="date" required>
+                            </label>
+                            <label class="ml-4" for="time">
+                                <span class="text-lg text-c_04">Hora:</span>
+                                <input class="bg-c_05 ml-2 p-2" type="time" name="time" required>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="p-2 bg-c_02 rounded shadow-lg text-lg text-c-04">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="relative mt-32">
+        <div class="bg-c_01 h-28 pt-16 pr-32">
+        </div>
+        <div class="absolute bottom-0 left-64">
+            <img class="h-48" src="./images/logo.svg" alt="logo">
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+h2 {
+    @apply font-sans text-6xl text-c_02;
+}
+span {
+    @apply text-2xl text-c_03;
+}
+@tailwind utilities;
