@@ -4,10 +4,10 @@
 
 @layer base {
     :root {
-        --color-text-base: 255, 255, 255;
+        --color-text-base: 246, 246, 224;
         --color-text-base-inverted: 221, 171, 42;
-        --color-text-muted: 255, 255, 255;
-        --color-text-inverted: 134, 104, 26;
+        --color-text-muted: 118, 91, 22;
+        --color-text-inverted: 49, 47, 47;
         --color-fill: 246, 237, 224;
         --color-button-accent: 239, 223, 168;
         --color-button-accent-hover: #ffffff;
