@@ -1,14 +1,37 @@
+function withOpacity(variableName) {
+  return ({ opacityValue }) => {
+    if (opacityValue != undefined) {
+      return `rgba(var(${variableName}), ${opacityValue})`
+    }
+    return `rgb(var(${variableName}))`
+  }
+}
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      colors: {
-        'c_01': '#f6ede0',
-        'c_02': '#ddab2a',
-        'c_03': '#86681a',
-        'c_04': '#312f2f',
-        'c_05': '#fefbf7'
+      textColor: {
+        skin: {
+          base: withOpacity('--color-text-base'),
+          'base-inverted': withOpacity('--color-text-base-inverted'),
+          muted: withOpacity('--color-text-muted'),
+          inverted: withOpacity('--color-text-inverted')
+        }
+      },
+      backgroundColor: {
+        skin: {
+          fill: withOpacity('--color-fill'),
+          'button-accent': withOpacity('--color-button-accent'),
+          'button-accent-hover': withOpacity('--color-button-accent-hover'),
+          'button-muted ': withOpacity('--color-button-muted')
+        }
+      },
+      gradientColorStops: {
+        skin: {
+          hue: withOpacity('--color-fill')
+        }
       }
     },
   },

@@ -1,9 +1,16 @@
 @tailwind base;
 @tailwind components;
-h2 {
-    @apply font-sans text-6xl text-c_02;
-}
-span {
-    @apply text-2xl text-c_03;
-}
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --color-text-base: 255, 255, 255;
+        --color-text-base-inverted: 221, 171, 42;
+        --color-text-muted: 255, 255, 255;
+        --color-text-inverted: 134, 104, 26;
+        --color-fill: 246, 237, 224;
+        --color-button-accent: 239, 223, 168;
+        --color-button-accent-hover: #ffffff;
+        --color-button-muted: #ffffff;
+    }
+};

@@ -9,11 +9,13 @@
 </head>
 <body>
     <header>
-        <nav class="bg-c_01 h-28 pt-16 pr-32">
-            <ul class="flex justify-end space-x-4 text-lg text-c_04">
-                <li><a href="./index.html">Inicio</a></li>
-            </ul>
-        </nav>
+        <div class="bg-skin-fill h-28 pt-16 pr-32">
+            <nav>
+                <ul class="flex justify-end space-x-4 text-lg text-skin-inverted">
+                    <li><a href="./index.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="absolute top-0 left-64">
             <img class="h-48" src="./images/logo.svg" alt="logo">
         </div>
@@ -21,54 +23,53 @@
     <main>
         <section>
             <div class="flex flex-col items-center mt-32">
-                <h2>Contáctanos</h2>
-                <form action="" class="bg-c_01 mt-8 py-12 px-24 space-y-8 rounded shadow">
+                <h2 class="text-skin-base-inverted text-6xl">Contáctanos</h2>
+                <form class="bg-skin-fill mt-8 py-12 px-24 space-y-8" action="">
                     <label class="block" for="name">
-                        <span>Nombre</span>
-                        <input type="text" class="block bg-c_05 mt-2 p-2 text-xl w-full" placeholder="Juanito Perez Lopez" name="name" autocomplete="name" required>
+                        <span class="text-skin-inverted text-2xl">Nombre</span>
+                        <input class="block mt-2 p-2 w-full text-xl" type="text" name="name" placeholder="Tu nombre" autocomplete="name" required>
                     </label>
-                    <label class="block" for="">
-                        <span>Correo Electronico</span>
-                        <input type="email" class="block bg-c_05 mt-2 p-2 text-xl w-full" placeholder="hola@mixtemi.com" name="email" autocomplete="email" required>
+                    <label class="block" for="email">
+                        <span class="text-skin-inverted text-2xl">Correo Electronico</span>
+                        <input class="block mt-2 p-2 w-full text-xl" type="text" name="email" placeholder="Tu nombre" autocomplete="email" required>
                     </label>
                     <div>
-                        <span>Pregunta Si/No</span>
+                        <span class="text-skin-inverted text-2xl">Pregunta Si/No</span>
                         <div class="flex justify-around mt-2">
-                            <label for="">
+                            <label class="flex items-center">
                                 <input type="radio" name="pr-1" value="si" required>
-                                <span class="text-gray-800">Si</span>
+                                <span class="ml-1 text-skin-inverted text-lg">Si</span>
                             </label>
-                            <label for="">
+                            <label class="flex items-center">
                                 <input type="radio" name="pr-1" value="no" required>
-                                <span class="text-gray-800">No</span>
+                                <span class="ml-1 text-skin-inverted text-lg">No</span>
                             </label>
                         </div>
                     </div>
                     <label class="block" for="pt-1">
-                        <span>Pregunta texto</span>
-                        <textarea class="block bg-c_05 mt-2 p-2 w-full text-xl" name="pt-1" rows="3" placeholder="Me parece muy bonito"></textarea>
+                        <span class="text-skin-inverted text-2xl">Pregunta texto</span>
+                        <textarea class="block mt-2 p-2 w-full text-xl" name="pt-1" rows="4" placeholder="Me parece muy bonito"></textarea>
                     </label>
                     <div>
-                        <span>Pregunta fecha</span>
-                        <div class="mt-2">
-                            <label class="" for="date">
-                                <span class="text-lg text-c_04">Día:</span>
-                                <input class="bg-c_05 ml-2 p-2" type="date" name="date" required>
+                        <span class="text-skin-inverted text-2xl">Pregunta fecha</span>
+                        <div class="mt-2 space-x-4">
+                            <label for="date">
+                                <span class="text-skin-inverted text-lg">Día:</span>
+                                <input class="ml-1 p-2" type="date" name="date" required>
                             </label>
-                            <label class="ml-4" for="time">
-                                <span class="text-lg text-c_04">Hora:</span>
-                                <input class="bg-c_05 ml-2 p-2" type="time" name="time" required>
+                            <label for="time">
+                                <span class="text-skin-inverted text-lg">Hora:</span>
+                                <input class="ml-1 p-2" type="time" name="time" required>
                             </label>
                         </div>
                     </div>
-                    <button type="submit" class="p-2 bg-c_02 rounded shadow-lg text-lg text-c-04">Enviar</button>
+                    <button class="bg-skin-button-accent p-2 text-skin-inverted text-lg" type="submit">Enviar</button>
                 </form>
             </div>
         </section>
     </main>
     <footer class="relative mt-32">
-        <div class="bg-c_01 h-28 pt-16 pr-32">
-        </div>
+        <div class="bg-skin-fill h-28"></div>
         <div class="absolute bottom-0 left-64">
             <img class="h-48" src="./images/logo.svg" alt="logo">
         </div>
