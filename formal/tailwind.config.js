@@ -8,7 +8,11 @@ function withOpacity(variableName) {
 }
 
 module.exports = {
-  purge: [],
+  mode: 'jit',
+  purge: [
+    './index.html',
+    './contact.html'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
